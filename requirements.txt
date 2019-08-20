@@ -1,0 +1,8 @@
+matplotlib==3.0.3
+PyYAML==5.1.2
+seaborn==0.9.0
+tensorboardX==1.8
+torch==1.2.0
+torchvision==0.4.0
+tqdm==4.34.0
+torchviz==0.0.1

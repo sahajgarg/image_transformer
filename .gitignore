@@ -1,0 +1,4 @@
+transformer_logs/
+venv/
+datasets/
+__pycache__

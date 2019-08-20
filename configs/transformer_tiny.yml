@@ -1,0 +1,30 @@
+seed: 1234
+
+train:
+  epochs: 100
+  batch_size: 8
+  sample_iter: 1000
+  sample_size: 8
+  log_iter: 10
+  clip_grad_norm: 0.0
+
+optim:
+  lr: 0.1
+  warmup: 4000
+
+model:
+  image_size: 8
+  channels: 3
+  hidden_size: 64
+  nlayers: 12
+  num_heads: 4
+  total_key_depth: 0 # If 0, uses hidden_size instead
+  total_value_depth: 0
+  attn_type: "global"
+  distr: "cat"
+  num_mixtures: 5 # for dmol only
+  filter_size: 128 # in ffn
+  dropout: 0.1
+  initializer_gain: 0.2
+
+

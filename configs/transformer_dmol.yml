@@ -1,0 +1,32 @@
+seed: 1234
+
+train:
+  epochs: 100
+  batch_size: 8
+  sample_iter: 1000
+  sample_size: 8
+  log_iter: 1
+  clip_grad_norm: 0
+
+optim:
+  lr: 0.1
+  warmup: 4000
+
+model:
+  # Using cifar10_base hparams -- ideally gets 2.90 bits/dim
+  image_size: 32
+  channels: 3
+  hidden_size: 256
+  nlayers: 14
+  num_heads: 8
+  total_key_depth: 512 # If 0, uses hidden_size instead
+  total_value_depth: 512
+  attn_type: "local_1d"
+  distr: "dmol"
+  num_mixtures: 10 # for dmol only
+  filter_size: 512 # in ffn
+  dropout: 0.1
+  block_length: 256
+  initializer_gain: 0.2
+
+
